@@ -1,0 +1,74 @@
+/* AddStudent.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+  max-width: 500px;
+  margin: 70px auto;
+  padding: 20px 60px;
+  background-color: #1F2833; /* Dark background color */
+  color: #C5C6C7;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.container h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #66FCF1;
+}
+
+.container div {
+  margin-bottom: 25px;
+}
+
+.container label {
+  display: block;
+  margin-bottom: 10px;
+  color: #C5C6C7;
+}
+
+.container input,
+.container select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #66FCF1;
+  border-radius: 6px;
+  background-color: #0B0C10; /* Darker background for input fields */
+  color: #C5C6C7;
+  outline: none; /* Remove default focus outline */
+  font-size: 16px;
+}
+
+.container input::placeholder {
+  color: #66FCF1; /* Change placeholder color */
+}
+
+.container select {
+  padding: 10px;
+}
+
+button {
+  padding: 14px 28px;
+  background-color: #66FCF1;
+  color: #0B0C10;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45A29E;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.25em;
+}

@@ -1,0 +1,94 @@
+/* HomePage.css */
+
+.home-container {
+  color: #C5C6C7;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px; /* Adjust for navbar */
+}
+
+.home-content {
+  text-align: center;
+  /* background-color: #1F2833; */
+  padding: 40px;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  width: 500px; /* Increase width to accommodate larger input */
+}
+
+.home-content h2 {
+  color: #66FCF1;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-input {
+  padding: 15px;
+  width: 350px; /* Increase width for larger input */
+  border: 1px solid #45A29E;
+  border-radius: 4px 0 0 4px;
+  background-color: #0B0C10;
+  color: #C5C6C7;
+  font-size: 16px; /* Increase font size */
+}
+
+.search-button {
+  padding: 15px 30px; /* Increase padding for larger button */
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #45A29E;
+  color: #0B0C10;
+  font-size: 16px; /* Increase font size */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #66FCF1;
+}
+
+.error-message {
+  color: #FF6B6B;
+  margin-top: 10px;
+}
+
+.student-info {
+  margin-top: 20px;
+  text-align: left;
+  background-color: #1f293f24;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.student-info h2 {
+  color: #66FCF1;
+  margin-bottom: 20px;
+}
+
+.student-info p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.student-info strong {
+  color: #66FCF1;
+}
+
+.student-info span {
+  font-weight: bold;
+}
+
+/* .error-message {
+  color: red;
+  font-size: 5em;
+  margin-top: 0.25em;
+} */
