@@ -22,7 +22,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-brand">
         <Link to="/" className="logo-link">RollCall Finder</Link>
-        <span className="subheading">Search and Access Your Details by Roll Number</span>
+        <span className="subheading">Search and Access Your Details by Roll-Number</span>
       </div>
       <ul className="navbar-nav">
         <li className="nav-item">
