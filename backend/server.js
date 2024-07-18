@@ -47,7 +47,10 @@ sequelize.sync().then(() => {
 
   // API routes
   app.use('/api/auth', authRoutes); // Mount auth routes
-
+  app.get('/', (req, res) => {
+    res.send('Backend server is running.');
+  });
+  
   app.use('/api/students', studentRoutes);
   app.use('/api/admin', adminRoutes);
 }).catch((error) => {
