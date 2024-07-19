@@ -14,7 +14,7 @@ const HomePage = () => {
     }
 
     try {
-      const response = await axiosInstance.get(`/students/${rollNo}`);
+      const response = await axiosInstance.get(`${process.env.REACT_APP_BASE_URL}/api/students/${rollNo}`);
       setStudent(response.data);
       setErrors({});
     } catch (err) {
