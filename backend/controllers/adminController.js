@@ -31,8 +31,12 @@ const adminLogin = async (req, res) => {
         const token = jwt.sign({ id: admin.id, username: admin.username }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
         // Set HttpOnly cookie
-        res.cookie('token', token, { httpOnly: true, secure: process.env.NODE_ENV === 'production', sameSite: 'Strict' });
-
+        res.cookie('token', token, {
+          httpOnly: true,
+          secure: process.env.NODE_ENV === 'production',
+          sameSite: 'Strict',
+          maxAge: 3600000 // 1 hour
+        });
         return res.status(200).json({ success: true, message: 'Login successful' });
       } else {
         // Invalid password
@@ -50,7 +54,11 @@ const adminLogin = async (req, res) => {
 
 const adminLogout = async (req, res) => {
   try {
-    res.clearCookie('token'); // Clear the HttpOnly cookie
+    res.clearCookie('token', {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'Strict'
+    });
     res.status(200).json({ success: true, message: 'Logout successful' });
   } catch (err) {
     console.error('Error during admin logout:', err);
