@@ -57,7 +57,7 @@ const adminLogout = async (req, res) => {
     res.clearCookie('token', {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
-      sameSite: 'Strict'
+      sameSite: 'None'
     });
     res.status(200).json({ success: true, message: 'Logout successful' });
   } catch (err) {
